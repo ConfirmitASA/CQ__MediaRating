@@ -9,9 +9,8 @@
 <div id="customSettings">
     <div class="comd-alert comd-alert--info">
         <div class="comd-alert__text" id="testID">
-            Media rating question.<br />
-            Question which allows respondents to evaluate media (video or audio) while it is broadcasted.<br />
-            Character limit property can't be used.
+            This question type allows respondents to evaluate media (video or audio) while it is broadcasted.<br />
+            Note that the character limit property cannot be used.
         </div>
     </div>
     <div class="node-properties-key-fields comd-panel mediaOptions">
@@ -48,7 +47,7 @@
                     <div class="node-property node-property--mediawidth">
                         <label class="node-property__label" for="mediaWidth">Width (px)
                             <div class="sd-tooltip-help"
-                                 data-tooltip-text="Width of the media container in pixels. 640px by default. The width of the container can't be less than 300 and more than 900 pixels."></div>
+                                 data-tooltip-text="The width of the media container in pixels. 640 by default. The width of the container must be between 300 and 900 pixels."></div>
                         </label>
                         <input type="text" class="form-input form-input--3ch checkIfNumeric" name="mediaWidth" id="mediaWidth" value=""/>
                     </div>
@@ -61,7 +60,7 @@
             <div class="node-properties__toggle co-flex co-flex--center">
                 <h4 class="co-text-size-normal">Slider options</h4>
                 <div class="sd-tooltip-help"
-                     data-tooltip-text="Slider settings of the question."></div>
+                     data-tooltip-text="Settings for the question’s slider."></div>
             </div>
             <div class="co-flex co-flex--center">
                 <button class="collapse-button comd-icon-button comd-panel__toggle--icon-button"></button>
@@ -73,10 +72,10 @@
                     <div class="node-property node-property--sliderposition">
                         <label class="node-property__label" for="sliderPosition">Position
                             <div class="sd-tooltip-help"
-                                 data-tooltip-text="Position of the slider regarding the media container. By default slider positioned at the bottom."></div>
+                                 data-tooltip-text="The position of the slider relative to the media container. Below by default."></div>
                         </label>
                         <select id="sliderPosition" class="form-input"/>
-                        <option value="bottom">Bottom</option>
+                        <option value="bottom">Below</option>
                         <option value="left">Left</option>
                         <option value="right">Right</option>
                         </select>
@@ -88,7 +87,7 @@
                     <div class="node-property node-property--slidermin">
                         <label class="node-property__label" for="scaleMin">Minimum
                             <div class="sd-tooltip-help"
-                                 data-tooltip-text="Set a slider minimum value. -50 by default. Can't be less than -100 and more than 99."></div>
+                                 data-tooltip-text="Specify the minimum value for the slider, -50 by default. The value must be between -100 and 99."></div>
                         </label>
                         <input type="text" class="form-input form-input--3ch checkIfNumeric" id="scaleMin" value=""/>
                     </div>
@@ -97,7 +96,7 @@
                     <div class="node-property node-property--slidermax">
                         <label class="node-property__label" for="scaleMax">Maximum
                             <div class="sd-tooltip-help"
-                                 data-tooltip-text="Set a slider maximum value. 50 by default. Can't be less than -99 and more than 100."></div>
+                                 data-tooltip-text="Specify the maximum value for the slider, 50 by default. The value must be between -99 and 100."></div>
                         </label>
                         <input type="text" class="form-input form-input--3ch checkIfNumeric" id="scaleMax"/>
                     </div>
@@ -106,7 +105,7 @@
                     <div class="node-property node-property--sliderstart">
                         <label class="node-property__label" for="scaleStart">Start point
                             <div class="sd-tooltip-help"
-                                 data-tooltip-text="Set a slider value at the moment media starts to play. 0 by default."></div>
+                                 data-tooltip-text="Specify the slider value for the moment the media starts to play, 0 by default."></div>
                         </label>
                         <input type="text" class="form-input form-input--3ch checkIfNumeric" id="scaleStart"/>
                     </div>
@@ -119,7 +118,7 @@
             <div class="node-properties__toggle co-flex co-flex--center">
                 <h4 class="co-text-size-normal">More options</h4>
                 <div class="sd-tooltip-help"
-                     data-tooltip-text="Additional options of the question."></div>
+                     data-tooltip-text="Additional options for the question."></div>
             </div>
             <div class="co-flex co-flex--center">
                 <button class="collapse-button comd-icon-button comd-panel__toggle--icon-button"></button>
@@ -134,7 +133,7 @@
                     <div class="node-property node-property--playbuttoncolor">
                         <label class="node-property__label" for="playButtonColor">Color
                             <div class="sd-tooltip-help"
-                                 data-tooltip-text="Background color of the play button. Black by default."></div>
+                                 data-tooltip-text="Background color of the play button, black by default."></div>
                         </label>
                         <input type="color" class="form-input" id="playButtonColor" value=""/>
                     </div>
@@ -143,7 +142,7 @@
                     <div class="node-property node-property--playbuttontext">
                         <label class="node-property__label" for="playButtonText">Text
                             <div class="sd-tooltip-help"
-                                 data-tooltip-text="Text inside of the play button. 'Play' by default. The text must be 35 characters length maximum."></div>
+                                 data-tooltip-text="Text within the Play button, ‘Play’ by default. The text cannot have more than 35 characters."></div>
                         </label>
                         <input type="text" class="form-input" id="playButtonText" value=""/>
                     </div>
@@ -152,7 +151,7 @@
                     <div class="node-property node-property--countdown">
                         <label class="node-property__label" for="countdown">Countdown
                             <div class="sd-tooltip-help"
-                                 data-tooltip-text="The time delay before the media starts to play. 3 seconds by default. The value must be positive and no more than 15 seconds."></div>
+                                 data-tooltip-text="The time delay before the media starts to play, 3 seconds by default. The value must be positive and no more than 15 seconds."></div>
                         </label>
                         <input type="text" class="form-input form-input--3ch checkIfNumeric" id="countdown" value=""/>
                         <span>sec</span>
@@ -167,7 +166,7 @@
                     <div class="node-property node-property--warningsamount">
                         <label class="node-property__label" for="warningsAmount">Checks
                             <div class="sd-tooltip-help"
-                                 data-tooltip-text="Amount of times user would be notified that they did not move the slider after the media starts to play. Once by default. The value must be positive and no more than 10."></div>
+                                 data-tooltip-text="Number of time the user will be notified that they have not moved the slider after the media has started to play, once by default. The value must be between 0 and 10."></div>
                         </label>
                         <input type="text" class="form-input form-input--3ch checkIfNumeric" id="warningsAmount"/>
                     </div>
@@ -176,7 +175,7 @@
                     <div class="node-property node-property--timecheck">
                         <label class="node-property__label" for="timeCheck">Time
                             <div class="sd-tooltip-help"
-                                 data-tooltip-text="Time of user being inactive (did not move the slider) after the media starts to play. After which they would be notified that they need to start evaluation. 5 seconds by default. Value must be positive."></div>
+                                 data-tooltip-text="Set the time limit for inactivity after the media starts to play, after which the user is notified that they should start the evaluation, 5 seconds by default. The value must be positive."></div>
                         </label>
                         <input type="text" class="form-input form-input--3ch checkIfNumeric" id="timeCheck"/>
                         <span>sec</span>
@@ -186,7 +185,7 @@
                     <div class="node-property node-property--resetbtntext">
                         <label class="node-property__label" for="resetBtnText">Reset button text
                             <div class="sd-tooltip-help"
-                                 data-tooltip-text="Text on the reset button. 'Reset' by default."></div>
+                                 data-tooltip-text="Text within the Reset button, ‘Reset’ by default."></div>
                         </label>
                         <input type="text" class="form-input form-input--10ch" id="resetBtnText"/>
                     </div>
@@ -197,7 +196,7 @@
                     <div class="node-property node-property--warningreset">
                         <label class="node-property__label" for="warningReset">Warning text
                             <div class="sd-tooltip-help"
-                                 data-tooltip-text="Default text: You don't seem to have moved your slider. Please click &lsquo;Reset&lsquo; to restart this task again."></div>
+                                 data-tooltip-text="The text to be presented to the user if they are inactive longer than the specified time. The default is: You don't seem to have moved your slider. Please click &lsquo;Reset&lsquo; to restart."></div>
                         </label>
                         <input type="text" class="form-input form-input--full-width" id="warningReset"/>
                     </div>
@@ -211,7 +210,7 @@
                     <div class="node-property node-property--warningios">
                         <label class="node-property__label" for="warningIOS">Notification for iOS devices
                             <div class="sd-tooltip-help"
-                                 data-tooltip-text="Default text: Media is loading and will start shortly."></div>
+                                 data-tooltip-text="The text to be presented to the user if they use device with iOS. The default is: Media is loading and will start shortly."></div>
                         </label>
                         <input type="text" class="form-input form-input--full-width" id="warningIOS"/>
                     </div>
@@ -253,12 +252,10 @@
     customQuestion.onInit = getInitSettings;
     
     function getInitSettings(settings, uiSettings, questionSettings, projectSettings) {
-        console.log("onInit");
         projectLanguages = projectSettings;
     }
 
 	function setInputValue(settings, uiSettings) {
-        console.log("onSettingsReceived");
         currentLanguage = String(uiSettings.currentLanguage);
         if(settings !== null) {
             if(settings.hasOwnProperty('playButtonText')) {
@@ -339,8 +336,6 @@
                 warningReset: warningResetObj,
                 warningIOS: warningIOSObj
             };
-            console.log('settings');
-            console.log(settings);
             settings.playButtonText[currentLanguage] = inputPlayButtonText.value;
             settings.resetBtnText[currentLanguage] = inputResetBtnText.value;
             settings.warningReset[currentLanguage] = inputWarningReset.value;
