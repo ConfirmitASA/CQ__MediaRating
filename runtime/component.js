@@ -73939,7 +73939,7 @@ var component_MediaRatingQuestion = /*#__PURE__*/function () {
 
 
 (function () {
-  Confirmit.pageView.registerCustomQuestion("378376ec-d3e7-47a8-871d-e432c82e4cd5", function (question, customQuestionSettings, questionViewSettings) {
+  Confirmit.pageView.registerCustomQuestion("6f41ab25-214d-4c98-a06f-60b6ca31b466", function (question, customQuestionSettings, questionViewSettings) {
     new component_MediaRatingQuestion(question, customQuestionSettings);
   });
 })();

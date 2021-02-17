@@ -410,7 +410,7 @@ class MediaRatingQuestion {
 /* global register */
 (function () {
     Confirmit.pageView.registerCustomQuestion(
-        "378376ec-d3e7-47a8-871d-e432c82e4cd5",
+        "6f41ab25-214d-4c98-a06f-60b6ca31b466",
         function (question, customQuestionSettings, questionViewSettings) {
             new MediaRatingQuestion(question, customQuestionSettings);
         }
