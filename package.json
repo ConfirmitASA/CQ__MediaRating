@@ -1,7 +1,8 @@
 {
   "scripts": {
     "polyfilRuntime": "webpack --config webpack.config.runtime.js",
-    "polyfilDesign": "webpack --config webpack.config.design.js"
+    "polyfilDesign": "webpack --config webpack.config.design.js",
+    "start:dev": "webpack-dev-server"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +15,16 @@
     "copy-webpack-plugin": "^6.0.3",
     "html-webpack-plugin": "^4.3.0",
     "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
-  }
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "jquery": "^3.5.0",
+    "jquery-ui": "^1.12.1",
+    "jquery-ui-touch-punch": "^0.2.3",
+    "video.js": "^7.8.1"
+  },
+  "sideEffects": [
+    "./node_modules/jquery-ui/**/*.js"
+  ]
 }
