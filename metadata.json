@@ -1,8 +1,8 @@
 {
   "id": "6f41ab25-214d-4c98-a06f-60b6ca31b466",
   "schemaVersion": 2,
-  "name": "Media Rating (DEVELOPMENT)",
-  "description": "Development version of Media Rating",
+  "name": "Media Rating",
+  "description": "Media (video or audio) rating while it broadcast",
   "baseQuestionType": "OpenForm",
   "disableDefaultRendering": true,
   "iconUrl": "design/icon.svg",

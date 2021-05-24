@@ -10,6 +10,10 @@ module.exports = {
     optimization: {
         minimize: false
     },
+    devServer: {
+        https: true,
+        disableHostCheck: true
+    },
     module: {
         rules: [
             {
@@ -25,6 +29,3 @@ module.exports = {
         ]
     }
 };
-
-
-
